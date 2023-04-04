@@ -1,4 +1,5 @@
 export default {
+  target: `server`,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'PagesNuxtDemo',
@@ -38,5 +39,19 @@ export default {
   build: {},
   nitro: {
     preset: `cloudflare_pages`,
+    nitro: {
+      preset: `cloudflare_pages`,
+      routes: {
+        '/': {
+          prerender: true,
+        },
+        '/api/**': {
+          cors: true,
+          headers: {
+            'access-control-allow-methods': [`GET`, `POST`],
+          },
+        },
+      },
+    },
   },
 }
