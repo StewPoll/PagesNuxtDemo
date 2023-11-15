@@ -22,7 +22,7 @@
     "*.**": "prettier --check --ignore-unknown"
   },
   "dependencies": {
-    "axios": "^1.4.0",
+    "axios": "^1.6.2",
     "bootstrap": "^5.3.2",
     "core-js": "^3.31.0",
     "nuxt": "^3.6.2",
