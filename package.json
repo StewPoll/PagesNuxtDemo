@@ -24,7 +24,7 @@
   "dependencies": {
     "axios": "^1.4.0",
     "bootstrap": "^5.3.2",
-    "core-js": "^3.31.0",
+    "core-js": "^3.35.1",
     "nuxt": "^3.9.3",
     "sass": "^1.70.0"
   },
